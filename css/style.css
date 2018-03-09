@@ -1,0 +1,92 @@
+/*GLOBAL*/
+* {
+    /* #2 #font #faces */
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* #2 #colorful #background */
+    background-color: #F5F5F5;
+}
+
+h1 {
+    /* #2 #colourful #app-bar */
+    background-color: #3F51B5;
+    color: white;
+}
+
+button {
+    /* #2 #colourful #plusfive */
+    background-color: #CDDC39;
+    color: black;
+    /* #2 #font capital #letters */
+    text-transform: uppercase;
+}
+
+/*APP BAR*/
+div strong h3, div button{
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    
+    width: 33%;
+    height: 72px;
+    word-spacing: 16px;
+    border-spacing: 16px;
+    margin: auto;
+    text-align: center;
+}
+/*CHANNELS LIST*/
+h2 {
+    /* #2 #colorful #channelandchat */
+    background-color: white;
+}
+/*TAB BAR*/
+#Message-Bar button{
+    text-align: center;
+    
+}
+/*MESSAGES*/
+.message div {
+    width: 80%;
+    margin-bottom: 8px;
+    
+}
+.message h3 {
+    font-size: medium;
+}
+.message p {
+    background-color: white;
+    padding: 16px;
+}
+.message button {
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+    height: auto;
+    width: auto;
+    border-style: outset;
+    
+}
+.message h3 em {
+    font-size: larger;
+    font-style: normal;
+}
+.message-paragraph {
+    text-align: left;
+}
+
+.selected {
+    border-bottom: 4px;
+    
+}
+.selected-channel {
+    border-left-color: indigo;
+    color: indigo;
+    padding: 16px;
+    font-size: 16px;
+    height: 16px;
+}

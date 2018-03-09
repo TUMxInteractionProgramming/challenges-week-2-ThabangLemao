@@ -5,7 +5,8 @@
 
     <!-- #1 #structure #title -->
     <title>chatter|app</title>
-
+    <!--link to css file-->
+    <link rel="stylesheet" href="css/style.css"/>
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
 
@@ -22,37 +23,8 @@
           * Accent color_text: black
           */
 
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
         /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
+        
 
         /*styles for chat area*/
         p {
@@ -60,10 +32,10 @@
             background-color: white;
         }
 
-        strong {
+        /*strong {
             /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
             text-transform: uppercase;
-        }
+        }*/
 
         h3 {
             /* #2 #font #metadata is now medium */
@@ -105,7 +77,7 @@
 <ul>
     <li>#Yummy <button style="background-color: white"><img src="https://ip.lfe.mw.tum.de
 /sections/star-o.png" alt="Empty Star"></button></li>
-    <li>#SevenContinents <button style="background-color: white"><img src="https://ip.lfe.mw.tum.de
+    <li class="selected-channel">#SevenContinents <button style="background-color: white"><img src="https://ip.lfe.mw.tum.de
 /sections/star.png" alt="Star"></button></li>
     <li>#KillerApp <button style="background-color: white"><img src="https://ip.lfe.mw.tum.de
 /sections/star-o.png" alt="Empty Star"></button></li>
@@ -117,7 +89,7 @@
 
 <!-- #1 #channels #buttons -->
 <div style="background-color: white">
-    <button><img src="https://ip.lfe.mw.tum.de
+    <button class="selected"><img src="https://ip.lfe.mw.tum.de
 /sections/lightbulb-o.png" alt="LightBulb">NEW</button>
     <button><img src="https://ip.lfe.mw.tum.de
 /sections/fire.png" alt="Fire">trending</button>
@@ -127,7 +99,8 @@
 
 
 <!-- chat area -->
-<!-- #1 #chat #name -->
+<div id="Message-Bar">
+    <!-- #1 #chat #name -->
 <h1>#SevenContinents
     <!-- #1 #chat #location is wrapped in small tag-->
     <small>by
@@ -136,7 +109,7 @@
     </small>
 </h1>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -146,12 +119,12 @@
     <em>15 min. left</em>
     </h3>
     <!-- #1 #chat #messages depict a short fictional chat-->
-    <p>What's the place you folks call home?</p>
+    <p class="message-paragraph">What's the place you folks call home?</p>
     <!-- #1 #chat #button subsequent to each message -->
-    <button>+5 min.</button>
+    <button class="Message-Buttons">+5 min.</button>
 </div>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -166,7 +139,7 @@
     <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -181,7 +154,7 @@
     <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -196,7 +169,7 @@
     <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -211,7 +184,7 @@
     <button>+5 min.</button>
 </div>
 
-<div>
+<div class="message">
     <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
     <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -225,6 +198,8 @@
     <!-- #1 #chat #button subsequent to each message -->
     <button>+5 min.</button>
 </div>
+</div>
+
 
 
 </body>
